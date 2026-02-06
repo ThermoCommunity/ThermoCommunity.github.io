@@ -1,0 +1,15 @@
+
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+.hero { display: flex; justify-content: space-between; padding: 40px; }
+.hero img { width: 260px; border-radius: 12px; }
+.icons a { margin-right: 12px; }
+.projects, .news { padding: 40px; }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+.card { text-decoration: none; color: black; border-radius: 12px; overflow: hidden; border: 1px solid #ddd; }
+.card img { width: 100%; transition: transform 0.4s; }
+.card:hover img { transform: scale(1.1); }
+.card div { padding: 16px; }
+.badge { padding: 4px 8px; border-radius: 6px; font-size: 12px; }
+.active { background: #c8f7dc; }
+.back { display: block; margin: 20px; }
+footer { text-align: center; padding: 20px; }
