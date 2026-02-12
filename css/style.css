@@ -1,4 +1,72 @@
 
+.top-ribbon {
+  background: #c40000;   /* DTU red */
+  width: 100%;
+  color: white;
+  font-size: 14px;
+}
+
+.ribbon-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ribbon-left a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ribbon-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ribbon-right a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.ribbon-right a:not(:last-child)::after {
+  content: "|";
+  margin-left: 12px;
+  color: rgba(255,255,255,0.6);
+}
+
+.ribbon-search {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.ribbon-search input {
+  height: 28px;
+  border: none;
+  padding: 0 8px;
+  outline: none;
+}
+
+.ribbon-search button {
+  height: 28px;
+  border: none;
+  background: white;
+  color: #c40000;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.highlight {
+  background-color: yellow;
+  transition: background 0.3s ease;
+}
+
+
 *{box-sizing:border-box}
 body{
   margin:0;
@@ -219,4 +287,9 @@ body{
 
 .pub-links a:hover {
   color: #0077cc;
+}
+
+
+html {
+  scroll-behavior: smooth;
 }
